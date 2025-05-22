@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamingCoreX</title>
+  <link rel="stylesheet" href="style.css">
+      <script>
+        
+    document.addEventListener("DOMContentLoaded", () => {
+        let current = 0;
+        const slides = document.querySelectorAll(".gallery-grid img");
+
+        slides.forEach((slide, index) => {
+            slide.style.display = index === 0 ? "block" : "none";
+        });
+
+        setInterval(() => {
+            slides[current].style.display = "none";
+            current = (current + 1) % slides.length;
+            slides[current].style.display = "block";
+        }, 3000);
+    });
+</script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./Images/logoo.jpg" alt="GamingCoreX Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Mainpage.php">HOME🏠</a></li>
+        <li><a href="shop.html">SHOP🎮</a></li>
+        <li><a href="about.html">ABOUT🕹️</a></li>
+        <li><a href="contact.html">CONTACT📞</a></li>
+        <li><a href="cart.html">CART🛒</a></li>
+        <li><a href="login.html">LOGIN🔑</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+
+  <div class="hero">
+    <div class="hero-video">
+      <video autoplay muted loop>
+        <source src="./Videos/hero-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-content">
+      <h1>Welcome To GamingCoreX</h1>
+      <p>Level Up Your Setup!</p>
+       <div class="main-content">
+            <div class="gallery-grid">
+                <img src="./Images/ST.jpg" alt="Gaming Keyboard">
+                <img src="./Images/CO.jpg" alt="Gaming Mouse">
+                <img src="./Images/headphone.jpg" alt="Gaming Headphone">
+                <img src="./Images/JS.jpg" alt="Gaming Chair">
+                <img src="./Images/MG.jpg" alt="Gaming Keyboard">
+                <img src="./Images/PCB.jpg" alt="Gaming Microphone">
+                <img src="./Images/FI3.jpg" alt="Gaming Keyboard">
+            </div>
+        </div>
+
+    </div>
+  </div>
+  <br>
+
+<div class="product-gallery">
+ 
+    <img src="./Images/FI.jpg" alt="Gaming Keyboard">
+    <img src="./Images/FI1.jpg" alt="Gaming Mouse">
+    <img src="./Images/FI2.jpg" alt="Gaming Headset">
+    <img src="./Images/FI3.jpg" alt="Gaming Keyboard">
+    <img src="./Images/FI4.jpg" alt="Gaming Keyboard">
+    <img src="./Images/FI5.jpg" alt="Gaming Mouse">
+    <img src="./Images/view.jpg" alt="PS5">
+</div>
+
+  <div class="page-content">
+    <h2>About GamingCoreX</h2>
+    <p>
+      Welcome to GamingCoreX, your ultimate destination for all things gaming!<br>
+      We are dedicated to providing you with the best gaming products and accessories to enhance your gaming experience.<br>
+      Whether you're a casual gamer or a hardcore enthusiast, we have something for everyone.<br>
+      Our mission is to deliver top-notch gaming gear that meets the needs of gamers worldwide.<br>
+      From high-performance gaming monitors to cutting-edge peripherals, we strive to offer the latest and greatest in gaming technology.<br>
+      Join us on this exciting journey as we explore the world of gaming together!
+    </p>
+  </div>
+
+  <footer>
+    <p>
+      © 2023 GamingCoreX. All Rights Reserved. | Level Up Your Game Today!
+    </p>
+    <h5>Follow Us On:</h5>
+    <div class="social-media">
+      <a href="https://www.facebook.com/"><img src="./Images/facebook.jpg" alt="facebook" style="height: 20px; width: 20px;"></a>
+      <a href="https://www.instagram.com/"><img src="./Images/instgram.jpg" alt="instagram" style="height: 20px; width: 20px;"></a>
+      <a href="https://x.com/Ram38596"><img src="./Images/twiteer.jpg" alt="Twitter" style="height: 20px; width: 20px;"></a>
+    </div>
+  </footer>
+</body>
+</html>
